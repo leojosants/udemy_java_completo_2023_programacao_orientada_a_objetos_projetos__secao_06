@@ -7,24 +7,24 @@ public class Main {
 
 		Locale.setDefault(Locale.US);
 
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 
 		System.out.print("\nInforme a largura: ");
-		double largura = sc.nextDouble();
+		double width = scanner.nextDouble();
 		
 		System.out.print("Informe o comprimento: ");
-		double comprimento = sc.nextDouble();
+		double length = scanner.nextDouble();
 		
 		System.out.print("Informe o metro quadrado: ");
-		double metroQuadrado = sc.nextDouble();
+		double squareMeter = scanner.nextDouble();
 		
-		double area = largura * comprimento;
-		double preco = area * metroQuadrado;
+		double area = width * length;
+		double price = area * squareMeter;
 
 		System.out.printf("\nAREA = %.2f%n", area);
-		System.out.printf("PRECO = %.2f%n", preco);
+		System.out.printf("PRECO = %.2f%n", price);
 
-		sc.close();
+		scanner.close();
 	}
 
 }
